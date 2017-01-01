@@ -19,23 +19,18 @@ export default {
   created () {
     // fetch data from server
     // i m using dummy data for now..
-    // var dummy = [
-    //   {id: 1, title: 'Name of Product 1', price: 40, image: 'product.png'},
-    //   {id: 2, title: 'Name of Product 2', price: 90, image: 'product.png'},
-    //   {id: 3, title: 'Name of Product 3', price: 10, image: 'product.png'},
-    //   {id: 4, title: 'Name of Product 4', price: 20, image: 'product.png'}
-    // ]
+    var dummy = [
+      {id: 1, title: 'Name of Product 1', price: 40, image: 'logo.png'},
+      {id: 2, title: 'Name of Product 2', price: 90, image: 'logo.png'},
+      {id: 3, title: 'Name of Product 3', price: 10, image: 'logo.png'},
+      {id: 4, title: 'Name of Product 4', price: 20, image: 'logo.png'}
+    ]
 
-    // this.$set('products', dummy)
+    this.products = dummy
   },
   data () {
     return {
-      products: [
-        {id: 1, title: 'Name of Product 1', price: 40, image: 'product.png'},
-        {id: 2, title: 'Name of Product 2', price: 90, image: 'product.png'},
-        {id: 3, title: 'Name of Product 3', price: 10, image: 'product.png'},
-        {id: 4, title: 'Name of Product 4', price: 20, image: 'product.png'}
-      ]
+      products: []
     }
   },
   components: { Product, ShoppingCart }

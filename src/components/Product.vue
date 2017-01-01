@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <img src="../assets/logo.png" class="image">
+    <img :src="require('../assets/' + product.image)" class="image">
     <p class="title">{{product.title}}</p>
     <p class="price">
       <span>$ {{product.price}}</span>
