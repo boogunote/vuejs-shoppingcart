@@ -7,10 +7,10 @@
       <span class="qty" v-if="qtyInCart > 0">x{{qtyInCart}}</span>
     </p>
     <div class="controls">
-      <button class="add-btn" @click="addToCart" v-if="qtyInCart == 0">ADD TO CART</button>
+      <button class="add-btn" v-on:click="addToCart" v-if="qtyInCart == 0">ADD TO CART</button>
       <div class="clearfix" v-else>
-        <button class="inc" @click="inc">+</button>
-        <button class="dec" @click="dec">-</button>
+        <button class="inc" v-on:click="inc">+</button>
+        <button class="dec" v-on:click="dec">-</button>
       </div>
     </div>
   </div>
