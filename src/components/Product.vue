@@ -77,6 +77,7 @@
     border: none;
     padding: 0.5em;
     outline: none;
+    cursor: pointer;
   }
   .add-btn {
     width: 100%;
