@@ -4,7 +4,7 @@
     <p class="cart-empty" v-if="total == 0">Your Shopping Cart is Empty!</p>
     <div class="items" v-else>
       <div class="item clearfix" v-for="item in items">
-        <img :src="require('../assets/' + item.image)" class="item-image">
+        <img v-bind:src="require('../assets/' + item.image)" class="item-image">
         <div class="item-details">
           <p class="item-title">{{item.title}}</p>
           <p class="item-price">

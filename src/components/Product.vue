@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <img :src="require('../assets/' + product.image)" class="image">
+    <img v-bind:src="require('../assets/' + product.image)" class="image">
     <p class="title">{{product.title}}</p>
     <p class="price">
       <span>$ {{product.price}}</span>

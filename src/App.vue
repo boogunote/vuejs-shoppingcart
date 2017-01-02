@@ -1,9 +1,7 @@
 <template>
   <div class="container">
       <div class="products">
-        <div class="clearfix">
-          <product v-for="product in products" :product="product"></product>
-        </div>
+        <product v-for="product in products" v-bind:product="product"></product>
       </div>
       <div class="shopping-cart">
         <shopping-cart></shopping-cart>
