@@ -3,11 +3,11 @@
     <img v-bind:src="require('../assets/' + product.image)" class="image">
     <p class="title">{{product.title}}</p>
     <p class="price">
-      <span>$ {{product.price}}</span>
+      <span>￥ {{product.price}}</span>
       <span class="qty" v-if="qtyInCart > 0">x{{qtyInCart}}</span>
     </p>
     <div class="controls">
-      <button class="add-btn" v-on:click="addToCart" v-if="qtyInCart == 0">ADD TO CART</button>
+      <button class="add-btn" v-on:click="addToCart" v-if="qtyInCart == 0">购买</button>
       <div class="clearfix" v-else>
         <button class="inc" v-on:click="inc">+</button>
         <button class="dec" v-on:click="dec">-</button>

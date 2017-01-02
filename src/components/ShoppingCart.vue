@@ -1,7 +1,7 @@
 <template>
   <div class="cart">
-    <p class="cart-title">Shopping Cart</p>
-    <p class="cart-empty" v-if="total == 0">Your Shopping Cart is Empty!</p>
+    <p class="cart-title">购物车</p>
+    <p class="cart-empty" v-if="total == 0">没有商品</p>
     <div class="items" v-else>
       <div class="item clearfix" v-for="item in items">
         <img v-bind:src="require('../assets/' + item.image)" class="item-image">
@@ -9,14 +9,14 @@
           <p class="item-title">{{item.title}}</p>
           <p class="item-price">
             <span>x{{item.qty}}</span>
-            <span class="right">$ {{item.qty * item.price}}</span>
+            <span class="right">￥ {{item.qty * item.price}}</span>
           </p>
         </div>
       </div>
     </div>
     <div class="cart-total">
-      <span>Total</span>
-      <span class="right">$ {{total}}</span>
+      <span>总计</span>
+      <span class="right">￥ {{total}}</span>
     </div>
   </div>
 </template>

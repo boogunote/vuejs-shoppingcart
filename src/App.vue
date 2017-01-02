@@ -18,10 +18,10 @@ export default {
     // fetch data from server
     // i m using dummy data for now..
     var dummy = [
-      {id: 1, title: 'Name of Product 1', price: 40, image: 'logo.png'},
-      {id: 2, title: 'Name of Product 2', price: 90, image: 'logo.png'},
-      {id: 3, title: 'Name of Product 3', price: 10, image: 'logo.png'},
-      {id: 4, title: 'Name of Product 4', price: 20, image: 'logo.png'}
+      {id: 1, title: '商品 1', price: 40, image: 'logo.png'},
+      {id: 2, title: '商品 2', price: 90, image: 'logo.png'},
+      {id: 3, title: '商品 3', price: 10, image: 'logo.png'},
+      {id: 4, title: '商品 4', price: 20, image: 'logo.png'}
     ]
 
     this.products = dummy
@@ -43,14 +43,6 @@ export default {
   body {
     font-family: Helvetica, sans-serif;
     margin: 0;
-  }
-
-  .clearfix:after {
-     content: " ";
-     visibility: hidden;
-     display: block;
-     height: 0;
-     clear: both;
   }
 
   .container {

@@ -4,7 +4,6 @@ import _ from 'lodash'
 export default {
   data: {
     cart: [
-      {id: 1, title: 'Name of Product 1', price: 40, image: 'logo.png', qty: 1}
     ]
   },
   add (product) {
